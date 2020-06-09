@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header">
+
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+    <div class="container">
+        <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+        <div class="jumbotron">
+            <H1>Hello SHOP</H1>
+            <p class="lead">Member function</p>
+            <p>
+                <a class="btn btn-lg btn-secondary" href="/members/new">Sign up</a>
+                <a class="btn btn-lg btn-secondary" href="/members">Sign list</a>
+
+            </p>
+            <p class="lead">Item function</p>
+                <p>
+                    <a class="btn btn-lg btn-dark" href="/items/new">Item register</a>
+                    <a class="btn btn-lg btn-dark" href="/items">Item list</a>
+                </p>
+                <p>
+                    <a class="btn btn-lg btn-info" href="/order">상품 주문</a>
+                    <a class="btn btn-lg btn-info" href="/orders">주문 내역</a>
+                </p>
+        </div>
+            <div th:replace="fragments/footer :: footer" />
+
+    </div>
+</body>
+</html>
